@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 
 SAVE_DIR = "results/"
 
-url_ins = open("instance.txt").read()  # https://friends.nico/ とか
+url_ins = open("instance.txt").read().strip()  # https://friends.nico とか
 
 mastodon = Mastodon(
     access_token='user.secret',
